@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Geniuns</title>
+    <title>Summer Sale</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap">
@@ -251,8 +251,10 @@
 
          <!-- sale calculation start here -->
 
-        <div class="selectItem" id="selectItem">
+        <div class="my-8">
+          <div class="selectItem" id="selectItem">
 
+          </div>
         </div>
         <div class="card w-96 bg-base-100 shadow-xl mt-44">
           
@@ -265,12 +267,20 @@
           
         </div>
             
-            <button class="bg-pink-600">Buy Now</button>
-            
-          </div>
-        </div>
-    </div>
-  
+        <button class="bg-pink-600 justify-center" onclick="my_modal_1.showModal()">Make Purchase</button>
+        <dialog id="my_modal_1" class="text-center">
+          <form method="dialog" class="modal-box">
+            <div class="w-[320px] h-[200px] "> <img src="images\congo.png" alt="prod1" class="rounded-xl px-16" /></div>
+            <h3 class="font-bold text-lg">Congratulations</h3>
+            <p class="py-4">Your Purchase the product</p>
+            <div class="px-6">
+              <!-- if there is a button in form, it will close the modal -->
+              <button id="homeButton" class="btn" >home</button>
+            </div>
+          </form>
+        </dialog>
+                </div>
+            </div>
   </div>
     
       
