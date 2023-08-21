@@ -10,7 +10,7 @@
 
     <link href="style.css">
 </head>
-<body>
+<body >
   <!-- banner section start here  -->
   <banner class="w-[1920px] mb-7 mx-auto">
     <div class="hero h-[807px] bg-orange-200 px-10">
@@ -67,9 +67,9 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
               </div>
-              <p class="font-semibold text-xl">K. Accessories</p>
-              <div class="card-actions">
-                <button class="">25.00 TK</button>
+              <div >
+                <h1 class="font-semibold text-xl">K. Accessories</h1> 
+                <h5 onclick = "itemNameShow(this)" >39.00 TK</h5>
               </div>
             </div>
            </div>
@@ -85,9 +85,10 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
               </div>
-              <p class="font-semibold text-xl">Home Cooker</p>
-              <div class="card-actions">
-                <button class="">49.00 TK</button>
+              
+              <div >
+                <h1 class="font-semibold text-xl">K. Accessories</h1> 
+                <h5 onclick = "itemNameShow(this)" >39.00 TK</h5>
               </div>
             </div>
            </div>
@@ -112,7 +113,7 @@
               </div>
               <p class="font-semibold text-xl">Sports Back Cap</p>
               <div class="card-actions">
-                <button class="">49.00 TK</button>
+                <button onclick = "itemNameShow(this)" >49.00 TK</button>
               </div>
             </div>
            </div>
@@ -130,7 +131,7 @@
               </div>
               <p class="font-semibold text-xl">Full Jersey Set</p>
               <div class="card-actions">
-                <button class="">69.00 TK</button>
+                <button onclick = "itemNameShow(this)" >69.00 TK</button>
               </div>
             </div>
            </div>
@@ -148,7 +149,7 @@
               </div>
               <p class="font-semibold text-xl">Sports cates</p>
               <div class="card-actions">
-                <button class="">159.00 TK</button>
+                <button onclick = "itemNameShow(this)" >159.00 TK</button>
               </div>
             </div>
            </div>
@@ -218,22 +219,33 @@
       
 
 
-      <div>
+      <div class="mt-24">
+        <!-- coupon code work start here  -->
+         <div>
+          <input type="text" id="couponCode" placeholder="Enter coupon code">
+         <button id="applyCoupon">Apply Coupon</button>
+         </div>
+
+         <!-- sale calculation start here -->
 
         <div class="selectItem" id="selectItem">
 
         </div>
         <div class="card w-96 bg-base-100 shadow-xl mt-44">
           
-          <div >
-            <h2 class="card-title">Shoes!</h2>
-            <p>TDiscount</p>
-            <div class="card-actions">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+          
+        <div >
+
+          <h1>total price: <span id="discountInfo"></span>tk</span></h1>
+          <h1>Discount :<span id="discountPercentage">00</span> </h1>
+          <h1>total  :<span id="discountedPrice">00</span> </h1>
+          
+        </div>
+            
+            <button class="btn btn-primary">Buy Now</button>
+            
           </div>
         </div>
-      </div>
     </div>
   
   </div>
