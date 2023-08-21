@@ -12,37 +12,76 @@ function itemNameShow(target){
 total = parseInt(total) + parseInt(price);
 // console.log(total);
 document.getElementById("discountInfo").innerText = total;
+
+
+
+// const count = itemNameShow.childElementCount;
 }
 
 
 
-// apply coupon code
+// coupon show state here
 
-const couponInput = document.getElementById('couponCode');
-const applyCouponBtn = document.getElementById('applyCoupon');
-const totalPriceInfo = document.getElementById('totalPriceInfo');
-const discountPercentage = document.getElementById('discountPercentage');
-const discountedPrice = document.getElementById('discountedPrice');
-const validCoupon = 'SUMMER2023';
-const couponDiscount = 0.2;
 
-applyCouponBtn.addEventListener('click', () => {
-  const enteredCoupon = couponInput.value;
 
-  if (enteredCoupon === validCoupon) {
-    const originalPrice = 100;
-    const discountAmount = originalPrice * couponDiscount;
-    const newPrice = originalPrice - discountAmount;
+// const totalAmountElement = document.getElementById("coupon");
+//         const messageElement = document.getElementById("show");
 
-    totalPriceInfo.textContent = `Total Price: $${originalPrice.toFixed(2)}`;
-    discountPercentage.textContent = `Discount: ${couponDiscount * 100}%`;
-    discountedPrice.textContent = `Discounted Price: $${newPrice.toFixed(2)}`;
-  } else {
-    totalPriceInfo.textContent = '';
-    discountPercentage.textContent = 'Invalid coupon';
-    discountedPrice.textContent = '';
+//         const totalAmount = parseInt(totalAmountElement.innerText);
+//         if (totalAmount > 200) {
+  
+//         }
+
+const couponText = document.getElementById("show")
+function cheekAndEnableCoupon(price){
+  if(total>= 200){
+    couponText.style.display = "block"; }
+    else{
+      couponText.style.display = "block"; 
+    }
   }
-});
+
+// apply coupon start here
+
+
+function applyCouponAndDiscount() {
+  const totalAmountElement = document.getElementById("totalp");
+  const couponCodeInput = document.getElementById("couponCode");
+  const discountInfoElement = document.getElementById("discountInfo");
+  const discountPercentageElement = document.getElementById("discountPercentage");
+  const discountedPriceElement = document.getElementById("discountedPrice");
+
+  const totalAmount = parseInt(totalAmountElement.innerText);
+  const couponCode = couponCodeInput.value;
+
+  if (totalAmount >= 200) {
+      if (couponCode === "SELL200") {
+          const discount = 0.2 * totalAmount; // 20% discount
+          const discountedAmount = totalAmount - discount;
+
+          discountInfoElement.innerText = discountedAmount + "tk";
+          discountPercentageElement.innerText = "20%";
+          discountedPriceElement.innerText = discountedAmount + "tk";
+      } else {
+          discountInfoElement.innerText = totalAmount + "tk";
+          discountPercentageElement.innerText = "00";
+          discountedPriceElement.innerText = totalAmount + "tk";
+          alert("Invalid coupon code.");
+      }
+  } else {
+      discountInfoElement.innerText = totalAmount + "tk";
+      discountPercentageElement.innerText = "00";
+      discountedPriceElement.innerText = totalAmount + "tk";
+      alert("Coupon code can only be applied for orders of 200tk or more.");
+  }
+}
+
+
+
+
+
+
+
 
 
 

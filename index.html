@@ -6,7 +6,8 @@
     <title>Geometry Geniuns</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap">
+    
 
     <link href="style.css">
 </head>
@@ -20,7 +21,9 @@
           <h1 class="text-3xl font-medium text-center ">---SALE FEVER---</h1>
           <p class="py-6 text-6xl font-bold w-[700px] text-center">Purchase TK 200 or <br> above & get <span class=" text-pink-600 ">20% off</span></p>
           <div class="flex gap-3 justify-center items-center "><h4 class="text-2xl font-medium ">Use Promo Code</h4>
-            <button class="btn btn-primary  text-2xl font-semibold w-[156px] h-[56px] bg-pink-600 ">SELL200</button></div>
+            <button class="btn btn-primary  text-2xl font-semibold w-[156px] h-[56px] bg-pink-600 " id="show" >SELL200</button></div>
+            
+
         </div>
       </div>
     </div>
@@ -31,10 +34,11 @@
 
   <!-- shoping start here -->
   <div class="max-w-[1920px] mt-10 mx-auto">
-    <div class="flex content-center flex-col lg:flex-row gap-7  ">
+    <div class="flex content-center flex-col lg:flex-row gap-7 px-7  ">
       <div>
         <p class=" text-4xl font-semibold mb-6 mx-10"> Kitchenware </p>
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-6">
+
         
           <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
@@ -55,6 +59,8 @@
               </div>
             </div>
            </div>
+
+
            <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
              <div class="w-[320px] h-[200px] bg-red-100"> <img src="/images/prod2.png" alt="prod1" class="rounded-xl px-16" /></div>
@@ -69,10 +75,12 @@
               </div>
               <div >
                 <h1 class="font-semibold text-xl">K. Accessories</h1> 
-                <h5 onclick = "itemNameShow(this)" >39.00 TK</h5>
+                <h5 onclick = "itemNameShow(this)" >25.00 TK</h5>
               </div>
             </div>
            </div>
+
+
            <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
              <div class="w-[320px] h-[200px] bg-red-100"> <img src="/images/prod3.png" alt="prod1" class="rounded-xl px-16" /></div>
@@ -87,17 +95,20 @@
               </div>
               
               <div >
-                <h1 class="font-semibold text-xl">K. Accessories</h1> 
-                <h5 onclick = "itemNameShow(this)" >39.00 TK</h5>
+                <h1 class="font-semibold text-xl">Home Cooker</h1> 
+                <h5 onclick = "itemNameShow(this)" >49.00 TK</h5>
               </div>
             </div>
            </div>
+
+
         </div>
 
 <!-- Sportwear work start here -->
 
         <p class=" text-4xl font-semibold mb-6 mx-10"> Sportswear </p>
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-6">
+
         
           <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
@@ -111,12 +122,14 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <p class="font-semibold text-xl">Sports Back Cap</p>
-              <div class="card-actions">
-                <button onclick = "itemNameShow(this)" >49.00 TK</button>
+              <div >
+                <h1 class="font-semibold text-xl">Sports Back Cap</h1> 
+                <h5 onclick = "itemNameShow(this)" >49.00 TK</h5>
               </div>
             </div>
            </div>
+
+
            <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
              <div class="w-[320px] h-[200px] bg-red-100"> <img src="/images/prod5.png" alt="prod1" class="rounded-xl px-16" /></div>
@@ -129,13 +142,15 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
               </div>
-              <p class="font-semibold text-xl">Full Jersey Set</p>
-              <div class="card-actions">
-                <button onclick = "itemNameShow(this)" >69.00 TK</button>
+              <div >
+                <h1 class="font-semibold text-xl">Full Jersey Set</h1> 
+                <h5 onclick = "itemNameShow(this)" >69.00 TK</h5>
               </div>
             </div>
            </div>
-           <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
+
+
+           <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">          
             <figure class="px-10 pt-10">
              <div class="w-[320px] h-[200px] bg-red-100"> <img src="/images/prod6.png" alt="prod1" class="rounded-xl px-16" /></div>
             </figure>
@@ -147,12 +162,14 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
               </div>
-              <p class="font-semibold text-xl">Sports cates</p>
-              <div class="card-actions">
-                <button onclick = "itemNameShow(this)" >159.00 TK</button>
+              <div >
+                <h1 class="font-semibold text-xl">Sports cates </h1> 
+                <h5 onclick = "itemNameShow(this)" >159.00 TK</h5>
               </div>
             </div>
            </div>
+
+
         </div>
 
 <!-- Furniture work start here  -->
@@ -172,12 +189,14 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
               </div>
-              <p class="font-semibold text-xl">Single Relax Chair</p>
-              <div class="card-actions">
-                <button class="">185.00 TK</button>
+              <div >
+                <h1 class="font-semibold text-xl">Single Relax Chair</h1> 
+                <h5 onclick = "itemNameShow(this)" >185.00 TK</h5>
               </div>
             </div>
            </div>
+
+
            <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
              <div class="w-[320px] h-[200px] bg-red-100"> <img src="/images/prod8.png" alt="prod1" class="rounded-xl px-16" /></div>
@@ -190,12 +209,14 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <p class="font-semibold text-xl">Children play</p>
-              <div class="card-actions">
-                <button class="">Children play</button>
+              <div >
+                <h1 class="font-semibold text-xl">Children play</h1> 
+                <h5 onclick = "itemNameShow(this)" >299.00 TK</h5>
               </div>
             </div>
            </div>
+
+
            <div class="card w-[350px] h-[350px] bg-base-100 shadow-xl ">
             <figure class="px-10 pt-10">
              <div class="w-[320px] h-[200px] bg-red-100"> <img src="/images/prod9.png" alt="prod1" class="rounded-xl px-16" /></div>
@@ -208,22 +229,24 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <p class="font-semibold text-xl">Sports cates</p>
-              <div class="card-actions">
-                <button class="">159.00 TK</button>
+              <div >
+                <h1 class="font-semibold text-xl">Flexible Sofa</h1> 
+                <h5 onclick = "itemNameShow(this)" >399.00 TK</h5>
               </div>
             </div>
            </div>
+
+
         </div>
       </div>
       
 
 
-      <div class="mt-24">
+      <div class="my-24">
         <!-- coupon code work start here  -->
          <div>
           <input type="text" id="couponCode" placeholder="Enter coupon code">
-         <button id="applyCoupon">Apply Coupon</button>
+         <button  class="bg-pink-600"  onclick="applyCouponAndDiscount()">Apply Coupon</button>
          </div>
 
          <!-- sale calculation start here -->
@@ -234,15 +257,15 @@
         <div class="card w-96 bg-base-100 shadow-xl mt-44">
           
           
-        <div >
+        <div class="h-80">
 
-          <h1>total price: <span id="discountInfo"></span>tk</span></h1>
+          <h1 id="totalp">total price: <span id="discountInfo"></span>tk</span></h1>
           <h1>Discount :<span id="discountPercentage">00</span> </h1>
           <h1>total  :<span id="discountedPrice">00</span> </h1>
           
         </div>
             
-            <button class="btn btn-primary">Buy Now</button>
+            <button class="bg-pink-600">Buy Now</button>
             
           </div>
         </div>
