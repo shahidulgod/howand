@@ -37,7 +37,7 @@ function cheekAndEnableCoupon(price){
   if(total>= 200){
     couponText.style.display = "block"; }
     else{
-      couponText.style.display = "block"; 
+      couponText.style.display = "none"; 
     }
   }
 
@@ -45,7 +45,7 @@ function cheekAndEnableCoupon(price){
 
 
 function applyCouponAndDiscount() {
-  const totalAmountElement = document.getElementById("totalp");
+  const totalAmountElement = document.getElementById("total");
   const couponCodeInput = document.getElementById("couponCode");
   const discountInfoElement = document.getElementById("discountInfo");
   const discountPercentageElement = document.getElementById("discountPercentage");
@@ -62,16 +62,9 @@ function applyCouponAndDiscount() {
           discountInfoElement.innerText = discountedAmount + "tk";
           discountPercentageElement.innerText = "20%";
           discountedPriceElement.innerText = discountedAmount + "tk";
-      } else {
-          discountInfoElement.innerText = totalAmount + "tk";
-          discountPercentageElement.innerText = "00";
-          discountedPriceElement.innerText = totalAmount + "tk";
-          alert("Invalid coupon code.");
-      }
+      } 
   } else {
-      discountInfoElement.innerText = totalAmount + "tk";
-      discountPercentageElement.innerText = "00";
-      discountedPriceElement.innerText = totalAmount + "tk";
+      
       alert("Coupon code can only be applied for orders of 200tk or more.");
   }
 }
